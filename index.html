@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Testing CKeditor</title>
+		<script src="bower_components/angular/angular.js">
+		</script>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/ckeditor2/ckeditor.js"></script>
+		
+		<script src="bower_components/ng-ckeditor/angularjs/plugins/ng-ckeditor/ng-ckeditor-1.0.1.js"></script>
+		<script src="test.js"></script>
+	</head>
+	<body ng-app="check">
+		<div  style="width:600px;" ng-controller="editorController">
+			{{htmlEditor}}
+			<ng-ckeditor bind="htmlEditor" skin="moono"></ng-ckeditor>
+			<span ng-bind="htmlEditor"></span>
+		</div>
+		 
+	</body>
+</html>
